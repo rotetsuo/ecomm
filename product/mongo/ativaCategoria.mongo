@@ -1,0 +1,7 @@
+db.categories.update({
+    NOME: "ESPORTE"
+},{
+    $set: {
+       STATUS: "ATIVA"
+    }
+})
