@@ -1,0 +1,53 @@
+db.users.insertMany([
+  {
+    nome: 'Maysa Azevedo',
+    email: 'maysa@email.com',
+    senha: 'e7101ada1693b1001990ffadc95566e4',
+    criadoEm: ISODate(),
+    cpf: '01673383661',
+    telefone: '31171336757',
+    endereco: {
+      rua: 'Rua Pau-Ferro',
+      numero: 100,
+      complemento: 'S/N',
+      cep: '31742810',
+      bairro: 'Solimões',
+      cidade: 'Belo Horizonte',
+      uf: 'MG',
+    },
+  },
+  {
+    nome: 'Breno Nunes',
+    email: 'breno@email.com',
+    senha: '836e74b3c4b5470925b813aaa74766a0',
+    criadoEm: ISODate(),
+    cpf: '03875479831',
+    telefone: '11248161466',
+    endereco: {
+      rua: 'Travessa Doris',
+      numero: 1867,
+      complemento: 'apto 604',
+      cep: '04469020',
+      bairro: 'Vila dos Andradas',
+      cidade: 'São Paulo',
+      uf: 'SP',
+    },
+  },
+  {
+    nome: 'Letícia Rocha',
+    email: 'leticia@email.com',
+    senha: 'af96037a3d117d539ab2f2991483a6b0',
+    criadoEm: ISODate(),
+    cpf: '72386660494',
+    telefone: '81432493831',
+    endereco: {
+      rua: 'Rua Formosa',
+      numero: 746,
+      complemento: 'S/N',
+      cep: '50630300',
+      bairro: 'Cordeiro',
+      cidade: 'Recife',
+      uf: 'PE',
+    },
+  }
+]);

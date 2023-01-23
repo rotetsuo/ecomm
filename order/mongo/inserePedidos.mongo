@@ -1,0 +1,57 @@
+db.orders.insertMany([
+  {
+    dataPedido: ISODate(),
+    cliente: {
+      id_cliente: ObjectId('63cea6c689d15c3560b9d2ad'),
+      nome: 'Letícia Rocha',
+    },
+    enderecoEntrega: {
+      rua: 'Rua Formosa',
+      numero: 746,
+      complemento: 'S/N',
+      bairro: 'Cordeiro',
+      cep: '50630300',
+      cidade: 'Recife',
+      uf: 'PE',
+    },
+    itens: [
+      {
+        id_produto: ObjectId('63cec44589d15c3560b9d2c2'),
+        produto: 'Notebook Samsung',
+        quantidade: 1,
+        desconto: 300,
+        precoUnitario: 3523,
+      },
+      {
+        id_produto: ObjectId('63cec44589d15c3560b9d2c4'),
+        produto: 'Clean Architecture',
+        quantidade: 1,
+        desconto: 10.29,
+        precoUnitario: 102.9,
+      }
+    ]
+  },
+  {
+    dataPedido: ISODate(),
+    cliente: {
+      id_cliente: ObjectId('63cea6c689d15c3560b9d2ab'),
+      nome: 'Maysa Azevedo',
+    },
+    enderecoEntrega: {
+      rua: 'Rua Pau-Ferro',
+      numero: 100,
+      complemento: 'S/N',
+      bairro: 'Solimões',
+      cep: '31742810',
+      cidade: 'Belo Horizonte',
+      uf: 'MG',
+    },
+    itens: [{
+      id_produto: ObjectId('63cec44589d15c3560b9d2cc'),
+      produto: 'Macbook Pro 16',
+      quantidade: 1,
+      desconto: 380,
+      precoUnitario: 31752,
+    }]
+  }
+]);
