@@ -7,6 +7,7 @@ paths:
   /api/categories:
     get:
       summary: Lista todas as categorias
+      summary: Recupera todas as categorias
       responses:
         200:
           description: Categorias listadas com sucesso
@@ -24,6 +25,28 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Categoria'
+  /api/categories/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    get:
+      summary: Recupera uma categoria pelo id
+      responses:
+        200:
+          description: Categoria listada com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Categoria'
+        404:
+          description: Categoria não encontrada
+          content:
+            application/json:
+              example: 'Not Found'
+
 components:
   schemas:
     Categoria:
