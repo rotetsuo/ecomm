@@ -14,7 +14,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Categorias'
-
+  /api/admin/categories:
+    post:
+      summary: Insere uma nova categoria
+      responses:
+        201:
+          description: Categoria inserida com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Categoria'
 components:
   schemas:
     Categoria:
