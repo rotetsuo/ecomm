@@ -1,0 +1,64 @@
+openapi: 3.0.3
+info:
+  title: Ecomm Products
+  description: API que consulta os produtos de um e-commerce (em desenvolvimento)
+  version: 0.0.1
+paths:
+  /api/categories:
+    get:
+      summary: Lista todas as categorias
+      summary: Recupera todas as categorias
+      responses:
+        200:
+          description: Categorias listadas com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Categorias'
+  /api/admin/categories:
+    post:
+      summary: Insere uma nova categoria
+      responses:
+        201:
+          description: Categoria inserida com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Categoria'
+  /api/categories/{id}:
+    parameters:
+    - name: id
+      in: path
+      schema:
+        type: integer
+      required: true
+    get:
+      summary: Recupera uma categoria pelo id
+      responses:
+        200:
+          description: Categoria listada com sucesso
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Categoria'
+        404:
+          description: Categoria não encontrada
+          content:
+            application/json:
+              example: 'Not Found'
+
+components:
+  schemas:
+    Categoria:
+      type: object
+      properties:
+        id:
+          type: integer
+        nome:
+          type: string
+        status:
+          type: string
+    Categorias:
+      type: array
+      items:
+        $ref: '#/components/schemas/Categoria'
