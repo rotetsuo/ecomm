@@ -1,7 +1,7 @@
 import passport from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
 
-import userModel from '../models/User.js';
+import userModel from '../models/user.js';
 import { verifyPassword } from './bcryptHash.js';
 
 passport.use(
