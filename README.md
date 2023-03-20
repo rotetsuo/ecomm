@@ -29,3 +29,24 @@
 ### 12. Processos administrativos - não
 
 --------------------------------------------------------------------------------
+
+## Microservices Patterns
+
+### 1. Serviços de domínio - ok
+        - Account, finance e product são serviços de domínio.
+### 2. Serviços de negócio - ok
+        - Os domínios se comunicam entre eles.
+### 3. API Gateway - não
+
+### 4. Agregador de processos - não
+
+### 5. Edge Service - não
+
+### 6. Single database vs Bancos diferentes
+        - Utilizamos diferentes bancos, como MongoDb e MySQL
+### 7. Eventos assíncronos - ok
+
+### 8. Agregação de logs - não
+
+### 9. Agregação de métricas - não
+
