@@ -50,3 +50,18 @@
 
 ### 9. Agregação de métricas - não
 
+
+##  Microservices
+
+### Padronização das Stacks
+        - A padronização foi feita utilizando MongoDb, MySQL e JavaScript.
+### Solução para Service Discovery
+        - Foi utilizado o Docker como solução.
+### Aspectos de Segurança
+        - Foram aplicados nos serviços o uso de tokens JWT e criptografia de senhas.
+### Tecnologias para Deploy e Build
+        - Foram utilizados o Jest, ESLint usariamos GitHub Actions.
+### Tolerância a Falhas em Aplicações Síncronas
+        - Circuit breaker e cache.
+### Comunicação Assíncrona
+        - Utilizamos a comunicação assíncrona entre o finance e o order.
