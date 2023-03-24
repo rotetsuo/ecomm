@@ -14,8 +14,8 @@
         - O MongoDB está sendo utilizado como serviço de apoio.
 ### 5. Build, release, run - não
 
-### 6. Processos - não
-
+### 6. Processos - ok
+        - Os dados não são armazenados em estados mas sim nos bancos de dados.
 ### 7. Vinculo de Portas - ok
         - Existe vinculo de portas dentro do projeto, declarados em docker-compose e no Dockerfile.
 ### 8. Concorrência - ok
@@ -44,7 +44,7 @@
 
 ### 6. Single database vs Bancos diferentes
         - Utilizamos diferentes bancos, como MongoDb e MySQL
-### 7. Eventos assíncronos - ok
+### 7. Eventos assíncronos - não
 
 ### 8. Agregação de logs - não
 
